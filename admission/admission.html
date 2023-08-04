@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<title>Document</title>
+</head>
+<body>
+	<form action="admission_action.php" method="POST">
+		<h3><a class="btn btn-primary" href="result_admission.php" >View Data</a></h3>
+		<h1 class="text-center mt-3 text-info">
+			Student Personal Detail
+		</h1>
+		
+		<div class="form-group">
+			<label for="Name">student Name :</label>
+			<input type="text" class="form-control" name="student_name" required>
+		</div>
+		<div class="form-group">
+			<label for="Name">father Name :</label>
+			<input type="text" class="form-control" name="father_name" required>
+		</div>
+		<div class="form-group">
+			<label for="Name">mother Name :</label>
+			<input type="text" class="form-control" name="mother_name" required>
+		</div>
+		<div class="form-group">
+			<label for="date of birth">student date of birth :</label>
+			<input type="date" class="form-control" name="s_dob" required>
+		</div>
+		<label for="Name">gender :</label>
+		<div class="form-check">
+			
+			<input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="option1" checked>
+			<label class="form-check-label" for="exampleRadios1">
+			  Male
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="option2">
+			<label class="form-check-label" for="exampleRadios2">
+			  Female
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="radio" name="gender" id="exampleRadios3" value="option3">
+			<label class="form-check-label" for="exampleRadios3">
+			  Transegender
+			</label>
+		  </div>
+		<div class="form-group">
+			<label for="Admission For Class">admission for class :</label>
+			<select class="select" name="admission_of_class">
+				<option value="1">8TH</option>
+				<option value="2">9th</option>
+				<option value="3">10th</option>
+				<option value="4">11th</option>
+				<option value="5">12th</option>
+			  </select>
+		</div>
+
+
+		<h1 class="text-center mt-3 text-info">
+			contact detail
+		</h1>
+		<div class="form-group">
+			<label for="Address">address :</label>
+			<input type="text" class="form-control" name="address" required>
+		</div>
+		<div class="form-group">
+			<label for="Country">country :</label>
+			<input type="text" class="form-control" name="country" required>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="state">state :</label>
+			<br>
+			<select class="select" name="state">
+				<option value="1">Haryana</option>
+				<option value="2">U.T</option>
+				<option value="3">Punjab</option>
+			  </select>
+		<div class="form-group">
+			<label for="city">city :</label>
+			<input type="text" class="form-control" name="city" required>
+		</div>
+
+		<div class="form-group">
+			<label for="locality">locality :</label>
+			<input type="text" class="form-control" name="locality" >
+		</div>
+
+		<div class="form-group">
+			<label for="mobile no">mobile no :</label>
+			<input type="text" class="form-control" name="mobile_no" >
+		</div>
+
+		<div class="form-group">
+			<label for="email">email :</label>
+			<input type="email" class="form-control" name="email" required>
+		</div>
+		<br>
+
+		<button class="btn btn-outline-info btn-block" name="submit" type="submit">Submit</button>
+		</form>
+</body>
+</html>
